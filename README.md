@@ -25,20 +25,15 @@ terraform-azure-prod/
 │   └── preprod/
 │       ├── main.tf
 │       ├── provider.tf
-│       ├── backend.tf
 │       ├── variables.tf
 │       ├── terraform.tfvars
-│       ├── output.tf
-│       └── versions.tf
 │
 ├── modules/
-│   ├── resource-group/
-│   ├── network/
-│   ├── subnet/
-│   ├── nsg/
-│   ├── public-ip/
-│   ├── nic/
-│   └── virtual-machine/
+│   ├── azurerm_resource-group/
+│   ├── azurerm_virtual_network/
+│   ├── azurerm_subnet/
+│   ├── azurerm_public-ip/
+│   └── azurerm_virtual-machine/
 │
 └── README.md
 ```
