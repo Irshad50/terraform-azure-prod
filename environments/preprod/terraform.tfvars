@@ -55,7 +55,7 @@ vms = {
     public_ip_name       = "frontend_pip"
     subnet_name          = "frontend-subnet"
     adminuser            = "aqsairam"
-    password             = "Aqsa******"
+    password             = "Aqsair@9150"
   }
   vm2 = {
     name                 = "backend-vm"
@@ -67,6 +67,6 @@ vms = {
     public_ip_name       = "backend_pip"
     subnet_name          = "backend-subnet"
     adminuser            = "aqsairam"
-    password             = "Aqsair*******"
+    password             = "Aqsair@9150"
   }
 }
