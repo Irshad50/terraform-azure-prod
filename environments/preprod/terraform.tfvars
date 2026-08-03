@@ -1,14 +1,14 @@
 rgs = {
   rg1 = {
     name     = "rg-preprod"
-    location = "centralindia"
+    location = "eastus"
   }
 }
 
 vnets = {
   vnet1 = {
     name                = "preprod-vnet"
-    location            = "centralindia"
+    location            = "eastus"
     resource_group_name = "rg-preprod"
     address_space       = ["10.0.0.0/16"]
   }
@@ -34,12 +34,12 @@ pips = {
   pip1 = {
     name                = "frontend_pip"
     resource_group_name = "rg-preprod"
-    location            = "centralindia"
+    location            = "eastus"
     allocation_method   = "Static"
   }
   pip2 = {
     name                = "backend_pip"
-    resource_group_name = "rg-preprod"
+    resource_group_name = "eastus"
     location            = "centralindia"
     allocation_method   = "Static"
   }
@@ -47,7 +47,7 @@ pips = {
 vms = {
   vm1 = {
     name                 = "frontend-vm"
-    location             = "centralindia"
+    location             = "eastus"
     resource_group_name  = "rg-preprod"
     size                 = "Standard_B2s"
     nic_name             = "frontend-nic"
@@ -59,7 +59,7 @@ vms = {
   }
   vm2 = {
     name                 = "backend-vm"
-    location             = "centralindia"
+    location             = "eastus"
     resource_group_name  = "rg-preprod"
     size                 = "Standard_B2s"
     nic_name             = "backend-nic"
@@ -68,5 +68,6 @@ vms = {
     subnet_name          = "backend-subnet"
     adminuser            = "aqsairam"
     password             = "Aqsair@9150"
+    
   }
 }
