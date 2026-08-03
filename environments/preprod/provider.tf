@@ -6,9 +6,9 @@ terraform {
     }
   }
   backend "azurerm" {
-    resource_group_name  = "rg-prod"
-    storage_account_name = "stprodterraform1"
-    container_name       = "tfstate"
+    resource_group_name  = "Backend_Rg"
+    storage_account_name = "eric5storage09"
+    container_name       = "devesource"
     key                  = "preprod_terraform.tfstate"
   }
 }
