@@ -68,6 +68,6 @@ vms = {
     subnet_name          = "backend-subnet"
     adminuser            = "aqsairam"
     password             = "Aqsair@9150"
-    
+
   }
 }
