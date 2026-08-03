@@ -39,8 +39,8 @@ pips = {
   }
   pip2 = {
     name                = "backend_pip"
-    resource_group_name = "eastus"
-    location            = "centralindia"
+    resource_group_name = "rg-preprod"
+    location            = "eastus"
     allocation_method   = "Static"
   }
 }
