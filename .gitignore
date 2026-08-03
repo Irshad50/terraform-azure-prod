@@ -1,0 +1,27 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+crash.log
+
+# Variable files
+
+# Override files
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# Logs
+*.log
+
+# IDE
+.vscode/
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Sensitive files
+*.pem
+*.key
