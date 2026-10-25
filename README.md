@@ -1,120 +1,26 @@
-# Terraform Azure Production Infrastructure
+# 🏢 Production Infrastructure Deployment with Terraform Data Blocks
 
-## Project Overview
-
-This project provisions a production-ready Azure infrastructure using reusable Terraform modules. The infrastructure follows Infrastructure as Code (IaC) principles and is designed to be modular, scalable, and reusable across multiple environments.
-
-## Architecture
-
-The following Azure resources are deployed:
-
-- Resource Group
-- Virtual Network (VNet)
-- Subnets
-- Network Security Groups (NSG)
-- Public IP Address
-- Network Interface (NIC)
-- Linux & Windows Virtual Machines
-
-## Project Structure
-
-```
-terraform-azure-prod/
-│
-├── environments/
-│   └── preprod/
-│       ├── main.tf
-│       ├── provider.tf
-│       ├── variables.tf
-│       ├── terraform.tfvars
-│
-├── modules/
-│   ├── azurerm_resource-group/
-│   ├── azurerm_virtual_network/
-│   ├── azurerm_subnet/
-│   ├── azurerm_public-ip/
-│   └── azurerm_virtual-machine/
-│
-└── README.md
-```
-
-## Features
-
-- Modular Terraform Architecture
-- Reusable Terraform Modules
-- Environment-based Deployment
-- Infrastructure as Code (IaC)
-- Production-ready Folder Structure
-- Easy to Extend and Maintain
-
-## Technologies Used
-
-- Microsoft Azure
-- Terraform
-- AzureRM Provider
-- Azure CLI
-- Git
-- GitHub
-
-## Deployment Steps
-
-### Initialize Terraform
-
-```bash
-terraform init
-```
-
-### Validate Configuration
-
-```bash
-terraform validate
-```
-
-### Generate Execution Plan
-
-```bash
-terraform plan
-```
-
-### Deploy Infrastructure
-
-```bash
-terraform apply
-```
-
-### Destroy Infrastructure
-
-```bash
-terraform destroy
-```
-
-## Prerequisites
-
-- Azure Subscription
-- Azure CLI
-- Terraform 1.x
-- Git
-- Visual Studio Code
-
-## Future Enhancements
-
-- Azure Load Balancer
-- Azure Bastion
-- NAT Gateway
-- Azure Application Gateway
-- Azure Key Vault
-- Azure Monitor
-- Log Analytics
-- Azure Kubernetes Service (AKS)
-
-## Author
-
-**MD Irshad Alam**
-
-Azure DevOps Engineer
-
-Specialized in Azure Cloud, Terraform, CI/CD, Kubernetes, and DevSecOps.
+[![Azure](https://img.shields.io/badge/Azure-Production_Infra-0078D4?style=for-the-badge&logo=microsoftazure&logoColor=white)](https://azure.microsoft.com/)
+[![Terraform](https://img.shields.io/badge/Terraform-Data_Blocks-844FBA?style=for-the-badge&logo=terraform&logoColor=white)](https://www.terraform.io/)
+[![Security](https://img.shields.io/badge/Security-KeyVault%20%7C%20RBAC-yellow?style=for-the-badge)](https://azure.microsoft.com/)
 
 ---
 
-⭐ If you found this project useful, consider giving it a Star.
+## 📌 Overview
+
+This repository demonstrates **production-grade Azure infrastructure provisioning** leveraging Terraform **Data Sources (data blocks)** to safely reference existing enterprise resources (Virtual Networks, Subnets, Key Vaults) without tightly coupling state or risking accidental modification of upstream foundational infrastructure.
+
+### Key Highlights
+* 🔍 **Data Sources Architecture**: Dynamic discovery of existing subnets, resource groups, and network security groups.
+* 🔐 **Azure Key Vault Secrets Injection**: Secure retrieval of admin credentials and SSH public keys during VM provisioning.
+* 🛡️ **Zero Hardcoded Secrets**: Fully decoupled variable structure with encrypted state management.
+* 💻 **Compute & Network Resources**: Provisions Network Interfaces (NICs), Public IPs, and Production Virtual Machines.
+
+---
+
+## 👨‍💻 Author
+
+**Md Irshad Alam**  
+*Senior Azure DevOps Engineer & Multi-Cloud Platform Architect*  
+* 💼 **LinkedIn:** [linkedin.com/in/md-irshad-alam-0a5278220](https://www.linkedin.com/in/md-irshad-alam-0a5278220)  
+* 📬 **Email:** `mdirshadalam91190@gmail.com`  
